@@ -2,3 +2,6 @@ use env variables for port and host
 use bootstrap for dev 
 salt and Asalt for password
 use dotenv for env variables
+mongoose save pre (salt)(mongoosejs.com)
+for hashing use crypto hash 
+crypto is a  building package 
