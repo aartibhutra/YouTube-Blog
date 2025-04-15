@@ -31,3 +31,12 @@ const userSchema = new Schema({
     timestamps: true
 });
 
+userSchema.pre("save", function (next){
+    const user = this;
+
+    if(!user.isModified("password")) return;
+});
+
+const User = model('user', userSchema);
+
+module.exports = User;
