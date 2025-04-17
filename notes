@@ -4,4 +4,4 @@ salt and Asalt for password
 use dotenv for env variables
 mongoose save pre (salt)(mongoosejs.com)
 for hashing use crypto hash 
-crypto is a  building package 
+crypto is a  building package (https://nodejs.org/api/crypto.html)
