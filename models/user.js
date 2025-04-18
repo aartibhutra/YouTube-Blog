@@ -37,7 +37,7 @@ userSchema.pre("save", function (next){
     if(!user.isModified("password")) return;
     
     // salt is a random string used to make the password more secure
-    const salt = randomBytes(16).toString();
+    const salt = randomBytes(16).toString("hex");
     const hashedPassword = createHmac("sha256", salt)
         .update(user.password)
         .digest("hex");
@@ -47,8 +47,8 @@ userSchema.pre("save", function (next){
     next();
 });
 
-userSchema.static("matchPassword", function(email , password){
-    const user = this.findOne({email});
+userSchema.static("matchPassword", async function(email , password){
+    const user = await this.findOne({email});
 
     if(!user) throw new Error("User not found");
     const salt = user.salt;
@@ -60,7 +60,7 @@ userSchema.static("matchPassword", function(email , password){
 
     if(userProvidedPassword !== hashedPassword) throw new Error("Invalid password");
 
-    return {...user , password: undefined,salt: undefined};
+    return user;
 })
 
 const User = model('user', userSchema);
