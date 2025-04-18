@@ -5,3 +5,5 @@ use dotenv for env variables
 mongoose save pre (salt)(mongoosejs.com)
 for hashing use crypto hash 
 crypto is a  building package (https://nodejs.org/api/crypto.html)
+
+use mongoose virtual function to create a virtual field in the document
