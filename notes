@@ -6,4 +6,7 @@ mongoose save pre (salt)(mongoosejs.com)
 for hashing use crypto hash 
 crypto is a  building package (https://nodejs.org/api/crypto.html)
 
+
+create a virtual function for particular user (schema)
 use mongoose virtual function to create a virtual field in the document
+https://mongoosejs.com/docs/tutorials/virtuals.html
