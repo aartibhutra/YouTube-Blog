@@ -10,3 +10,6 @@ crypto is a  building package (https://nodejs.org/api/crypto.html)
 create a virtual function for particular user (schema)
 use mongoose virtual function to create a virtual field in the document
 https://mongoosejs.com/docs/tutorials/virtuals.html
+
+alter box :
+https://getbootstrap.com/docs/5.3/components/alerts/#examples
