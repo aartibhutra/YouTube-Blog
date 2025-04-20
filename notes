@@ -16,3 +16,6 @@ https://getbootstrap.com/docs/5.3/components/alerts/#examples
 
 cookie parser:
 https://www.npmjs.com/package/cookie-parser
+
+multer for images(file):
+https://www.npmjs.com/package/multer
