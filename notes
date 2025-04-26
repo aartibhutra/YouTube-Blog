@@ -19,3 +19,5 @@ https://www.npmjs.com/package/cookie-parser
 
 multer for images(file):
 https://www.npmjs.com/package/multer
+
+use DiskStorage for store files 
