@@ -17,6 +17,7 @@ mongoose.connect("mongodb://localhost:27017/Blogora").then(e => console.log("Mon
 app.use(express.urlencoded({extended:false}));
 app.use(cookieParser());
 app.use(checkForAuthenticationCookie("token"));
+app.use(express.static(path.resolve("./public")));
 
 app.set('view engine', 'ejs');
 app.set('views', path.resolve("./views"));
