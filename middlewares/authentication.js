@@ -13,7 +13,6 @@ function checkForAuthenticationCookie(cookieName){
         return next();
     };
 };
-
 module.exports = {
     checkForAuthenticationCookie,
 };
